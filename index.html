@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="index.js" type="text/JavaScript"></script>
+    <title>Team Alpha</title>
+    </head>
+    <body class="container">
+        <main id="app">
+            <span class="square"></span>
+            <span class="circle"></span>
+            <div id="forms">
+                <form>
+                    <label class="username" for="userName">Username</label><br>
+                    <input type="text" name="userName" id="logName" >
+                    <p class="err" id="errName" style="visibility: hidden;">username not found!</p>
+                    <label class="username" for="userEmail">Email</label><br>
+                    <input type="email" name="userEmail" id="logEmail">
+                    <p class="err" id="errEmail" style="visibility: hidden;">Email not valid!</p>
+
+                    <label class="username" for="userPassword">Password</label><br>
+                    <input type="password" name="userPassword" id="logPassword" >
+                    <p class="err" id="errPassword" style="visibility: hidden;">wrong password!</p>
+                    
+                    <div class="con">
+    <div class="login">
+                    <button type="button" onclick="verify()">log in</button></div>
+                    <div class="signups">
+                    <button class="signup" type="button"><a href="createAccount.html">Sign Up</a></button></div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+    </html> 

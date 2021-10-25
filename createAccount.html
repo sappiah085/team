@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+    <script src="index1.js"></script>
+    <title>Home | Create Account</title>
+</head>
+<body class="container">
+    <main id="new">
+        <div id="new">
+            <div class="form">
+            <form>
+                <div id="a1" >
+                    <label class="user" for="userName">Create a username</label><br>
+                    <input type="text" name="userName" id="userName" minlength="5" maxlength="15"><br>
+                    <label id="errName" style="visibility: hidden;">username error</label><br>
+                    
+                    <button id="btn2" type="button" onclick="verifyName()" onmouseover="nextMsg()">next</button><br>
+
+                </div>
+                
+                <div id="a2">
+                    <label class="user" for="userEmail">Enter a valid email</label><br>
+                    <input type="email" name="userEmail" id="userEmail" ><br>
+                    <label id="errEmail" style="visibility: hidden;">Email error</label><br>
+
+                    <button id="btn1" style="visibility: visible;" type="button" onclick="back1()"  onmouseover="backMsg()" >Go Back</button>
+                    <button id="btn2" type="button" onclick="verifyEmail()" onmouseover="nextMsg()">next</button><br>
+                </div>
+
+                <div id="a3">
+                    <label class="user" for="userPassword">Enter a password</label><br>
+                    <input type="password" name="userPassword" id="userPassword1"  minlength="7" maxlength="50"><br>
+                    <label id="errPassword" style="visibility: hidden;">password error</label><br>
+
+                
+                    <label class="user" for="userPassword">Re-enter password to confirm</label><br>
+                    <input type="password" name="userPassword" id="pass2"  minlength="7" maxlength="50"><br>
+                    <label for="" style="visibility: hidden;">password do match</label><br>
+
+                    <button id="btn1" type="button" onclick="back2()" onmouseover="backMsg()">Go Back</button>
+                    <button onclick="" id="btn2" type="button" onclick="verifyPassword()" onmouseover="createMsg()">Create</button>
+                </div>
+
+
+                
+            </form>
+        </div>
+            <div id="signIn"><p>Have an account?	<button type="submit"><a href="index.html"> Log in</a></button></p></div>
+        </div>
+    </main>
+    <script src="/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</body>
+</html>

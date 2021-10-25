@@ -1,0 +1,183 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+ *{
+     margin: 0%;
+ }
+ html{
+                text-align: center;
+                font-family: sans-serif;
+                font-size: 62.5%;
+                width: 100%;
+                height: 100vh;
+    }
+    body{
+        background: url(IMG-20210826-WA0093.jpg) no-repeat;
+        background-size: cover;
+        position: relative;
+        min-width: 1164px;
+    }
+    #app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+button{
+                padding:0.5em;
+                margin: .3em;
+                width: 5em;
+                letter-spacing: 1px;
+                color: rgb(53, 48, 4);
+                opacity: 0.9;
+                border-radius: 2px;
+                font-size: 1.5rem;
+                border: none;
+                color: black;
+                text-transform: uppercase;
+                font-weight: 700;
+                outline: none;
+                background: rgba(255, 166, 0, 0.433);
+
+            }
+button a{
+                color: rgb(53, 48, 4);
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+button:hover{
+                background: orange;   
+            }
+.err{
+                font-size: 1rem;
+}
+ input{
+                margin: .5em 0;
+                padding: 1.1em;
+                position: relative;
+                transform: scale(1);
+                border: none;
+                background: transparent;
+                outline: 0;
+                border-bottom:1px solid rgb(241, 139, 5);
+                width: 40%;
+                transition: transform 0.5s ease-in-out;
+             }
+input:hover{
+    transform: scale(1.1);
+}
+label{
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(77, 45, 5);
+    text-transform: uppercase;
+}
+.circle{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    position: absolute;
+    left: 65%;
+    top: 20em;
+    transform: scale(1);
+    background-color: rgb(0, 0, 0);
+    animation-name: animate;
+    animation-duration: 7s;
+    box-shadow: 1px 3px 8px rgba(19, 19, 20, 0.521);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.square{
+    height: 10em;
+    width: 10em;
+    box-shadow: 1px 3px 8px rgba(19, 19, 20, 0.521);
+    position: relative;
+    top: 8em;
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    background-color: rgb(216, 140, 25);
+}
+ input:focus{
+background-color: rgba(0, 119, 0, 0.316);
+ }
+ .con{
+     display: flex;
+     justify-content: center;
+ }
+ 
+#forms{       
+     display: flex;
+     overflow: hidden;
+    flex-direction: column; 
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    border: 0 8px 0 rgba(255, 255, 255, 0.38);
+    min-width: 40%;
+    width:40%;
+    height: 60vh;
+    min-height: 60vh;
+    position: relative;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.37), rgba(255, 255, 255, 0.18));
+            }
+.signup{
+                background-color: rgb(134, 197, 134);
+                width: 6em;
+            }
+.signup:hover{
+    background-color: green;
+}
+input:focus ~ label{
+    top: 12px;
+}
+@keyframes animate {
+    0%{
+        transform: scale(1);
+        background-color: black;
+    }
+    100%{
+        transform:scale(2) ;
+        background-color: rgb(228, 130, 1);
+    }
+    
+}
+@keyframes ani {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }   
+}
+@media (max-width:900px) {
+    #forms{       
+       width:360px;
+       height: 700px;
+       min-height: 60vh;
+               }
+               body{
+                background: url(IMG-20210826-WA0093.jpg) no-repeat;
+                background-size:contain;
+                min-width: 360px;
+            }
+            body::before{
+                content: "";
+                height: 100%;
+                width: 100%;
+                display: block;
+                position: absolute;
+                background: linear-gradient(to top right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6));
+            }
+            .con{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+            button, .signup{
+                padding: 1.5em;
+width: 10em;
+            }
+}
